@@ -1,13 +1,13 @@
 Gradle Jinkubator presentation
 ===============
 
-Materials to gradle Jinkubator presentation - part II - tutorial.
-All modules can be run separately, gradlew is provided.
+Materials to gradle Jinkubator presentation - part II - tutorial.  
+All modules can be run separately, gradlew is provided.  
 Presentation can be found at https://docs.google.com/presentation/d/1GCeo4_zjPBeWWNEobjgRmGzKdtC23mGQp6wg3HzrkVw/edit?usp=sharing
 
 Modules
 -------
-* 1_hello -- basic hello tasko
+* 1_hello -- basic hello task
 * 2_task_types -- task created from type
 * 3_task_dependencies -- test task depending on beforeTest task to run 
 * 4_configuring_test -- changing existing task properties - based on test task from gradle tutorial
