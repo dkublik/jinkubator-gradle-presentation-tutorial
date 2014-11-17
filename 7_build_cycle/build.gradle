@@ -1,0 +1,25 @@
+task one << {
+    Thread.sleep(230)
+}
+
+task two(dependsOn: 'one') << {
+    Thread.sleep(122)
+}
+
+task three(dependsOn: 'two') << {
+    Thread.sleep(67)
+}
+
+
+
+gradle.projectsEvaluated {
+    tasks.each { task ->
+        task.doFirst {
+            ext.before = System.currentTimeMillis()
+        }
+        task.doLast {
+            ext.after = System.currentTimeMillis()
+            println "     --- exec time: ${after - before} ms"
+        }
+    }
+}

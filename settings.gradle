@@ -1,0 +1,9 @@
+include ':1_hello',
+		':2_task_types',
+		':3_task_dependencies',
+		':4_configuring_test',
+		':5_custom_task_types',
+		':6_simple_build_file',
+		':7_build_cycle'
+		
+		

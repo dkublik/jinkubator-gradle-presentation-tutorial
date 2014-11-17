@@ -1,0 +1,9 @@
+task hello << {
+    println '-------------- hello kitty!'
+    println "the project name is $name"
+    println "and welcome to $welcomePlace"
+}
+
+def getWelcomePlace() {
+    return 'Monkey Island'
+}

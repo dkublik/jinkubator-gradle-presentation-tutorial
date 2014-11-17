@@ -1,0 +1,13 @@
+task welcomeKitty(type: WelcomingTask) {
+    guest = "Kitty"
+}
+
+class WelcomingTask extends DefaultTask {
+
+    String guest
+
+    @TaskAction
+    public void welcome() {
+        println "hello $guest"
+    }
+}

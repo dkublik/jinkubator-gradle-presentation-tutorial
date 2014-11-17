@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+task beforeTest << {
+    println '----- testing about To start'
+}
+
+test {
+    dependsOn('beforeTest')
+}

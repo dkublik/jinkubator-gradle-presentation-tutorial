@@ -1,0 +1,5 @@
+
+task backupBuild(type: Copy) {
+    from 'build.gradle'
+    into 'backup'
+}
